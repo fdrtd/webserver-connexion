@@ -27,9 +27,6 @@ def main():
             port = int(arg[7:])
 
     bus = Bus()
-    microservices, classes = discover_microservices(bus)
-    bus.set_microservices(microservices)
-    bus.set_classes(classes)
 
     app = connexion.App(__name__, specification_dir='openapi/')
     app.app.json_encoder = JSONEncoder
