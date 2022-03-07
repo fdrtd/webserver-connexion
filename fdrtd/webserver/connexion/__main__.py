@@ -11,7 +11,6 @@ import waitress
 from flask import current_app
 
 from fdrtd.server.bus import Bus
-from fdrtd.server.discovery import discover_microservices
 from fdrtd.webserver.connexion.encoder import JSONEncoder
 
 
